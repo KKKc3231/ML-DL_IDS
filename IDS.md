@@ -7,7 +7,7 @@
 ## 卡方过滤
 
 <div align=center>
-<img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20220407193322505.png"/>
+<img src="https://gitee.com/kkkcstx/kkkcs/raw/master/img/image-20220407193322505.png"/>
 </div>
 
 ## 随机森林特征选择
