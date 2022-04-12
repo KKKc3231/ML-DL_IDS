@@ -1,4 +1,4 @@
-# ML&DL——IDS入侵检测
+# 🤖ML&DL——IDS入侵检测
 
 ## 1、说明
 
@@ -10,6 +10,10 @@
 
 - 对不平衡类别样本的处理，可以使用adasyn算法
 
+- 环境pip install -r requirements.txt 即可，注意keras和tensorflow的对应关系
+
+  [tensorflow和keras对应关系](https://blog.csdn.net/weixin_40109345/article/details/106730050)
+  
   
 
 ## 2、处理过程
