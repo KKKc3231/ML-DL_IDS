@@ -95,9 +95,9 @@ svm可视化
 
 [SVM简介及sklearn参数](https://www.cnblogs.com/solong1989/p/9620170.html)
 
-https://gitee.com/kkkcstx/kkkcs/raw/master/img/new_3d.png
+<img src="https://gitee.com/kkkcstx/kkkcs/raw/master/img/20220412110717.png" style="zoom:67%;" />
 
-<img src="https://gitee.com/kkkcstx/kkkcs/raw/master/img/new_3d.png" alt="svm_3D" style="zoom: 50%;" /><img src="https://gitee.com/kkkcstx/kkkcs/raw/master/img/svm二分类.png" alt="3D" style="zoom: 60%;" />
+
 
 ## 4、CNN
 
