@@ -70,4 +70,4 @@ pre = torch.max(out,1)[1] # 最大的值对应的下标即为得到的类别
 pre = pre.data.numpy()
 y_test = y_test.data.numpy()
 acc = accuracy_score(pre,y_test)
-print("test acc:{}".format(acc))
+print("test acc:{}".format(acc)) # 0.9328
