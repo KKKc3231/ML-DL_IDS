@@ -17,22 +17,22 @@ import numpy as np
 epoch = 10000
 learning_rate = 1e-4
 
-# 数据
+# iris数据，用来测试模型
 # iris = load_iris()
 # x = iris.data
 # y = iris.target
 
-data = pd.read_csv("G:/ML/Train-min-max.csv")
+data = pd.read_csv("G:/ML/Train-min-max.csv") # 你自己的数据集，最后一列是特征，前面列是数据
 x = data.iloc[:,0:-1]
 y = data.iloc[:,-1]
 x = np.array(x) # dataframe -> numpy
 y = np.array(y)
 
-X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.3)
-
+X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.3) # 划分数据集
+ 
 # model
 class my_cnn(nn.Module):
-    def __init__(self,num_feat=4):
+    def __init__(self,num_feat=42):
         super(my_cnn, self).__init__()
         self.l1 = nn.Linear(num_feat,16)
         self.relu = nn.ReLU()
@@ -45,7 +45,7 @@ class my_cnn(nn.Module):
         return x
 
 
-net = my_cnn(num_feat=42)
+net = my_cnn(num_feat=42) # num_feat是你数据集的输出特征，如果是iris的花改成4，根据你特征选择后的数据集进行修改即可
 optimizer = torch.optim.Adam(net.parameters(),lr=learning_rate) # 优化器
 loss_f = nn.CrossEntropyLoss() # 交叉熵损失函数
 
